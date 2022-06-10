@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signer Homepage</title>
+</head>
+<body>
+    <h1>Signer Application</h1>
+    <p>Upload Username, NFT Name and NFT to create Artist DID and signed NFT</p>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>Artist Username</label>
+        <input type="text" name="username">
+        <br><br>
+        <label>NFT Name</label>
+        <input type="text" name="nftName">
+        <br><br>
+        <label>Upload NFT</label>
+        <input type="file" name="nft">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
